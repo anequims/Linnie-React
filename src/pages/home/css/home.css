@@ -1,19 +1,49 @@
 .area {
   display: flex;
   text-align: center;
-}
-.area ::-webkit-scrollbar {
-  display: none;
+  margin-top: 10vh;
 }
 .area .a1 h1 {
   font-size: calc(2rem + 1.8vw);
+  width: 100%;
 }
 .area .a1 h1 span {
   margin-left: 8px;
 }
+.area .a1 .buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.area .a1 .buttons .btn-explore {
+  height: 3.4rem;
+  width: 18rem;
+}
 .area .a2 {
   display: flex;
 }
+.area .a2 div {
+  text-align: center;
+}
 .area .a2 img {
   width: 100%;
+}
+
+.blueprint img {
+  width: 100%;
+}
+
+.devs-area {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  area {
+    display: none;
+  }
+  area .a2 {
+    display: none;
+  }
 }/*# sourceMappingURL=home.css.map */

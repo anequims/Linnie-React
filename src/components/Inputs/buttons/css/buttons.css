@@ -1,11 +1,20 @@
 button {
   border: 0;
-  border-radius: 20%;
-  margin: 10px 30px;
+  border-radius: 16px;
+  margin: 6px 14px;
+  color: rgb(255, 246, 246);
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .btn-explore {
   background-color: #C25E84;
   height: 2.6rem;
-  width: 9rem;
+  width: 12rem;
+}
+
+.btn-create {
+  background-color: #FCD074;
+  height: 2.6rem;
+  width: 12rem;
 }/*# sourceMappingURL=buttons.css.map */
