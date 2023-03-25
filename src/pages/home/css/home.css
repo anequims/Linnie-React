@@ -1,0 +1,19 @@
+.area {
+  display: flex;
+  text-align: center;
+}
+.area ::-webkit-scrollbar {
+  display: none;
+}
+.area .a1 h1 {
+  font-size: calc(2rem + 1.8vw);
+}
+.area .a1 h1 span {
+  margin-left: 8px;
+}
+.area .a2 {
+  display: flex;
+}
+.area .a2 img {
+  width: 100%;
+}/*# sourceMappingURL=home.css.map */

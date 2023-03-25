@@ -1,0 +1,11 @@
+button {
+  border: 0;
+  border-radius: 20%;
+  margin: 10px 30px;
+}
+
+.btn-explore {
+  background-color: #C25E84;
+  height: 2.6rem;
+  width: 9rem;
+}/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #ECE6E8;
+  box-shadow: 0 4px 6px #c4bec0;
+}
+.navbar .navbar-brand {
+  margin-left: 30px;
+  margin-top: 6px;
+}
+.navbar a {
+  margin: 6px 16px;
+}
+.navbar form {
+  margin: 0.5rem 4rem;
+  width: 60vw;
+  height: 2.7rem;
+}
+.navbar .mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    display: none;
+  }
+  .navbar .pc {
+    display: none;
+  }
+  .navbar .mobile {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=navbar.css.map */
