@@ -1,0 +1,15 @@
+body{
+    padding-top: 100px;
+}
+@font-face {
+    font-family: 'Prim';
+    src: url(../public/fonts/KGPrimaryItalics.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Posterman';
+    src: url(../public/fonts/Posterman_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: 'Tommy';
+    src: url(../public/fonts/MADE\ TOMMY\ Thin_PERSONAL\ USE.otf);
+}

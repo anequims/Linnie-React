@@ -1,0 +1,55 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.area{
+    display: flex;
+    text-align: center;
+    margin-top: 10vh;
+    .a1{
+        h1{
+            font-size: calc(3rem + 1.8vw);
+            font-family: 'Posterman';
+            letter-spacing: 5px;
+            width: 100%;
+            span{
+                margin-left: 8px;
+                color: #C25E84;
+            }
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .btnExplore{
+                height: 3.4rem;
+                width: 18rem;
+            }
+        }
+    }
+    .a2{
+        display: flex;
+        .div{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.blueprint{
+    img{
+        width: 100%;
+    }
+}
+.devsArea{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .area{
+        display: none;
+        .a2{
+            display: none;
+        }
+    }
+}
