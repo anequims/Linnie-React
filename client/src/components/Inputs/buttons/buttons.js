@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
 import styles from './css/buttons.module.css'
 
-function ButtonExplore({text, width}) {
+function ButtonPink({text, width, link}) {
     return(
-        <Link to={"/explore"} className={`${styles.link} ${styles.btnExplore}`} style={{width:width}}>{text}</Link>
+        <Link to={link} className={`${styles.link} ${styles.btnExplore}`} style={{width:width}}>{text}</Link>
     )
 }
-function ButtonCreate({text, width}) {
+function ButtonYellow({text, width, link}) {
     return(
-        <Link to={"/create"}  className={`${styles.link} ${styles.btnCreate}`} style={{width:width}}>{text}</Link>
+        <Link to={link}  className={`${styles.link} ${styles.btnCreate}`} style={{width:width}}>{text}</Link>
     )
 }
 
 
 
-export {ButtonExplore, ButtonCreate}
+export {ButtonPink, ButtonYellow}

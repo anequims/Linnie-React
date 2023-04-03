@@ -7,8 +7,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 //Rotas
 import Home from './pages/home/home';
-import Login from './pages/auth/login/login';
-import Register from './pages/auth/register/register';
+import Login from './pages/auth/login';
+import Register from './pages/auth/register';
 import User from './pages/user/user';
 import ErrorPage from './pages/errorPage/errorPage';
 import Explore from './pages/explore/explore';

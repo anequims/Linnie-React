@@ -1,4 +1,4 @@
-body{
+.appBody{
     padding-top: 100px;
 }
 @font-face {
@@ -13,3 +13,23 @@ body{
     font-family: 'Tommy';
     src: url(../public/fonts/MADE\ TOMMY\ Thin_PERSONAL\ USE.otf);
 }
+
+.mask {
+    background-image: repeating-linear-gradient(0deg, #000000, #000000 13px, transparent 13px, transparent 23px, #000000 23px), repeating-linear-gradient(90deg, #000000, #000000 13px, transparent 13px, transparent 23px, #000000 23px), repeating-linear-gradient(180deg, #000000, #000000 13px, transparent 13px, transparent 23px, #000000 23px), repeating-linear-gradient(270deg, #000000, #000000 13px, transparent 13px, transparent 23px, #000000 23px);
+    background-size: 7px calc(100% + 23px), calc(100% + 23px) 7px, 7px calc(100% + 23px), calc(100% + 23px) 7px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+  }
+  
+  a:hover .mask {
+    animation: borderAnimation 0.4s infinite linear;
+  }
+  
+  @keyframes borderAnimation {
+    from {
+      background-position: 0 0, -23px 0, 100% -23px, 0 100%;
+    }
+    to {
+      background-position: 0 -23px, 0 0, 100% 0, -23px 100%;
+    }
+  }

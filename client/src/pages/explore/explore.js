@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getExploreData } from '../../api';
+
 import commentsIcon from './img/heart.png'
 import heartIcon from './img/comments.png'
 function Explore() {
@@ -19,8 +20,8 @@ function Explore() {
       <div className="d-flex flex-column align-items-center mb-5">
         <h1
           style={{
-            fontFamily: 'POSTMAN',
-            letterSpacing: '1px',
+            fontFamily: 'POSTERMAN',
+            letterSpacing: '4px',
             fontSize: '60px',
           }}
         >
@@ -37,36 +38,40 @@ function Explore() {
               key={model.id}
               className="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-5"
             >
-              <Link
-                to={`/model/${model.id}`}
-                className="text-decoration-none"
-                style={{ color: 'black' }}
-              >
+              
                 <div className="shadow-lg card card-link">
-                  <img
-                    src={image}
-                    alt={model.name}
-                    className="card-img-top"
-                    style={{ height: '400px' }}
-                  />
-                  <div className="card-footer d-inline-flex justify-content-between">
-                    <div className="user d-inline-flex">
+                  <Link
+                    to={`/model/${model.id}`}
+                    className="text-decoration-none"
+                    style={{ color: 'black' }}
+                  >
+                    <div className="card">
                       <img
-                        src={avatar}
-                        alt={model.userName}
-                        style={{ width: '26px', height: '26px' }}
+                        src={image}
+                        alt={model.name}
+                        className="card-img-top"
+                        style={{ height: '400px' }}
                       />
-                      <p className="ms-1">{model.userName}</p>
+                      <div className="mask card-img-overlay" ></div>
                     </div>
-                    <div className="d-inline-flex">
-                      <img src={commentsIcon} alt="" width="28px" height="28px"/>
-                      <p className="ms-1">{model.likes}</p>
-                      <img src={heartIcon} alt="" width="28px" height="28px"/>
-                      <p className="ms-1">{model.likes}</p>
+                    <div className="card-footer d-flex justify-content-between">
+                      <div className="user d-inline-flex">
+                        <img
+                          src={avatar}
+                          alt={model.userName}
+                          style={{ width: '26px', height: '26px' }}
+                        />
+                        <p className="ms-1">{model.userName}</p>
+                      </div>
+                      <div className="d-inline-flex">
+                        <img src={commentsIcon} alt="" width="28px" height="28px"/>
+                        <p className="ms-1">{model.comments}</p>
+                        <img src={heartIcon} alt="" width="28px" height="28px"/>
+                        <p className="ms-1">{model.likes}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
             </div>
           );
         })}

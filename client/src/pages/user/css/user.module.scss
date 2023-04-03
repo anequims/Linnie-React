@@ -1,0 +1,48 @@
+.sidebar{
+    border-right: 5px solid rgba(117, 117, 117, 0.404);
+}
+.userImg{
+    width: 16vw;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+.portfolio{
+    padding: 50px 4vw;
+    h1{
+        font-family: 'Tommy'; font-size:3.5vw;
+    }
+}
+.card, .card img{
+    margin: 0;
+    height: auto;
+    width: 17vw;
+    min-width: 216px;
+    border-radius: 12px;
+}
+
+/* Botão de Criação */
+.createBtn{
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    color: #C25E84;
+    background-color: transparent;
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 80px; /* Place the button 30px from the right */
+    z-index: 3; /* Make sure it does not overlap */
+
+    .imgBtn, .imgBtnHv{
+        width: 90px;
+    }
+    .imgBtnHv{
+        display: none;
+    }
+    &:hover{
+        .imgBtn{
+            display: none;
+        }
+        .imgBtnHv{
+            display: block;
+        }
+    }
+    
+}

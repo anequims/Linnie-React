@@ -1,0 +1,57 @@
+.options button {
+  border: none;
+}
+
+.skirExemple {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+.skirExemple img {
+  width: 100%;
+}
+
+.Forms form .FormCheck label {
+  width: 5rem;
+  padding: 2px;
+  margin-left: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 15px;
+  color: black;
+}
+.Forms form .FormCheck label p {
+  padding: 2px;
+  margin: 0px;
+  border: 4px #696969;
+  border-style: dashed;
+  border-radius: 8px;
+}
+.Forms form .FormCheck label:hover {
+  background-color: rgba(0, 0, 0, 0.4431372549);
+}
+.Forms form .FormCheck input[type=radio]:checked + label {
+  background-color: rgba(70, 68, 68, 0.3215686275);
+}
+.Forms form div {
+  margin-bottom: 30px;
+  display: flex;
+}
+.Forms form div input {
+  width: 110px;
+  height: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
+.Forms form div button {
+  width: 108px;
+  height: 31px;
+  margin-left: 20px;
+  padding-top: 3px;
+  background-color: #C25E84;
+  border: none;
+  border-radius: 13px;
+}/*# sourceMappingURL=skirt.module.css.map */
